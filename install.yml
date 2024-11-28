@@ -1,0 +1,8 @@
+---
+ - name: ansible playbook for git
+   hosts: all
+   tasks:
+     - name: install httpd package on remote server
+       yum:
+         name: httpd
+         state: present
